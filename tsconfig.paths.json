@@ -1,34 +1,17 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@api/*": [
-        "./api/*"
-      ],
-      "@assets/*": [
-        "./assets/*"
-      ],
-      "@img/*": [
-        "./assets/imgs/*"
-      ],
-      "@c/*": [
-        "./components/*"
-      ],
-      "@config/*": [
-        "./config/*"
-      ],
-      "@router/*": [
-        "./router/*"
-      ],
-      "@store/*": [
-        "./store/*"
-      ],
-      "@v/*": [
-        "./views/*"
-      ],
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["./*"],
+			"@api/*": ["./api/*"],
+			"@assets/*": ["./assets/*"],
+			"@img/*": ["./assets/imgs/*"],
+			"@c/*": ["./components/*"],
+			"@config/*": ["./config/*"],
+			"@router/*": ["./router/*"],
+			"@store/*": ["./store/*"],
+			"@v/*": ["./views/*"],
+			"@mixin": ["./assets/css/mixin.less"]
+		}
+	}
 }

@@ -28,7 +28,8 @@ module.exports = {
 			"@config": resolvePath("src/config"),
 			"@router": resolvePath("src/router"),
 			"@store": resolvePath("src/store"),
-			"@v": resolvePath("src/views")
+			"@v": resolvePath("src/views"),
+			"@mixin": resolvePath("src/assets/css/mixin.less")
 		}
 	},
 	// 全局配置antd的样式

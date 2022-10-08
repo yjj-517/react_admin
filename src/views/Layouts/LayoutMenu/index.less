@@ -1,0 +1,19 @@
+@import "@mixin";
+.menu {
+	min-height: 100vh;
+	// LOGO标签
+	.logo_box {
+		height: 64px;
+		.mixin-flex (row,center,center, nowrap);
+		.logo_img {
+			.w-h(30px,30px);
+		}
+		.logo_name {
+			color: @COLOR_C;
+			margin: 0 0 0 10px;
+			font-size: 24px;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+	}
+}
