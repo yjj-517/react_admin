@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//router
+// import { HashRouter } from "react-router-dom";
+// import Router from "@/router/index";
+// antd的多语言功能
+import { ConfigProvider } from "antd";
+import zhCN from "antd/es/locale/zh_CN";
+// import { Button } from "antd";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+	return (
+		// <HashRouter>
+		// 	<ConfigProvider locale={zhCN}>
+		// 		<Router />
+		// 	</ConfigProvider>
+		// </HashRouter>
+		<div>123</div>
+	);
+};
 
-export default App;
+export default React.memo(App);
