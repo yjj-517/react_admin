@@ -1,0 +1,11 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"workbench.colorTheme": "GitHub Dark Dimmed",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.formatOnSaveMode": "file",
+	"editor.tabSize": 2
+}
