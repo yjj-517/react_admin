@@ -1,5 +1,5 @@
 /*  !craco.config.js 以后将作为项目配置进行使用 */
-const CracoLessPlugin = require("craco-less");
+const CracoAntDesignPlugin = require("craco-antd");
 
 const path = require("path");
 const resolvePath = dir => path.join(__dirname, dir);
@@ -9,6 +9,13 @@ module.exports = {
 	},
 	devServer: {
 		port: 8080
+		// proxy: [
+		// 	{
+		// 		context: ["/data/api", "/api"],
+		// 		target: "https://www.dcfsscan.io",
+		// 		changeOrigin: true
+		// 	}
+		// ]
 	},
 	webpack: {
 		devtool: false,
@@ -27,20 +34,11 @@ module.exports = {
 	// 全局配置antd的样式
 	plugins: [
 		{
-			plugin: CracoLessPlugin,
+			plugin: CracoAntDesignPlugin,
 			options: {
-				cssLoaderOptions: {
-					modules: { localIdentName: "[local]_[hash:base64:5]" }
-				},
-				lessLoaderOptions: {
-					lessOptions: {
-						modifyVars: {
-							"@primary-color": "#1DA57A",
-							"@link-color": "#1DA57A",
-							"@border-radius-base": "2px"
-						},
-						javascriptEnabled: true
-					}
+				customizeTheme: {
+					"@primary-color": "#00c299",
+					"@border-radius-base": "10px"
 				}
 			}
 		}

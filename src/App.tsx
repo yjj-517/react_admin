@@ -3,9 +3,9 @@ import React from "react";
 // import { HashRouter } from "react-router-dom";
 // import Router from "@/router/index";
 // antd的多语言功能
-import { ConfigProvider } from "antd";
-import zhCN from "antd/es/locale/zh_CN";
-// import { Button } from "antd";
+// import { ConfigProvider } from "antd";
+// import zhCN from "antd/es/locale/zh_CN";
+import { Button } from "antd";
 
 const App: React.FC = () => {
 	return (
@@ -14,7 +14,10 @@ const App: React.FC = () => {
 		// 		<Router />
 		// 	</ConfigProvider>
 		// </HashRouter>
-		<div>123</div>
+		<div>
+			<h1>123</h1>
+			<Button type="primary">Primary Button</Button>
+		</div>
 	);
 };
 
